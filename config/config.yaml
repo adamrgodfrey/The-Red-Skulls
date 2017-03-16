@@ -11,7 +11,7 @@ window:
   height: 720
   title: Mission Pinball Framework - Red Skulls
   resizable: true
-  fullscreen: ture
+  fullscreen: true
   borderless: false
   exit_on_escape: true
 
