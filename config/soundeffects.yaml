@@ -5,21 +5,21 @@ sound_pools:
    sfx_left_slingshot:
       type: random_force_all
       sounds:
-         aaargh____LEGACY""
-         clash_2___LEGACY""
-         grunt_2___LEGACY""
-         grunt_6___LEGACY""
-         grunt_10__LEGACY""
-         high_sco__LEGACY""
-         laser__L__LEGACY""
-         punch__L__LEGACY__""
-         punch_3___LEGACY 2""
-         punch_4___LEGACY""
+         aaargh____LEGACY
+         clash_2___LEGACY
+         grunt_2___LEGACY
+         grunt_6___LEGACY
+         grunt_10__LEGACY
+         high_sco__LEGACY
+         laser__L__LEGACY
+         punch__L__LEGACY__
+         punch_3___LEGACY2
+         punch_4___LEGACY
    sfx_left_letters:
       type: random_force_all
       sounds:
-         all_lett__LEGACY""
-         bomb_wir__LEGACY""
-         combo_1__LEGACY""
-         dead_tar__LEGACY""
-         glass_broken__LEGACY""
+         all_lett__LEGACY
+         bomb_wir__LEGACY
+         combo_1__LEGACY
+         dead_tar__LEGACY
+         glass_broken__LEGACY
