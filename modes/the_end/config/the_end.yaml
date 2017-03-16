@@ -1,0 +1,33 @@
+#config_version=4
+mode:
+  start_events: ROAD_KINGS_COMPLETED
+  stop_events: timer_the_end_complete
+  priority: 300
+
+scoring:
+  s_c_eject_active:
+    score: 100000|block
+
+timers:
+  the_end:
+    start_value: 60
+    direction: down
+    control_events:
+    - event: balldevice_playfield_ball_enter
+      action: start 
+
+slide_player:
+  timer_the_end_tick: slide_10
+slides:
+  slide_10:
+  - type: text
+    text: 'Collect Supplies: (ticks)'
+show_player:
+  mode_the_end_started:
+    flash_c_time_lock:
+      loops: -1
+      speed: 12
+  mode_the_end_stopped:
+    flash_c_time_lock:
+      action: stop
+

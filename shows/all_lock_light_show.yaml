@@ -1,0 +1,50 @@
+# show_version=4
+- time: 0
+  lights:
+    l_r_lock: ff
+- time: '+1'
+  lights:
+    l_r_lock: 0
+- time: '+1'
+  lights:
+    l_left_lock: ff
+- time: '+1'
+  lights:
+    l_left_lock: 0
+- time: '+1'
+  lights:
+    l_center_lock: ff
+- time: '+1'
+  lights:
+    l_center_lock: 0
+- time: '+1'
+  lights:
+    l_left_lock: ff
+    l_r_lock: ff
+    l_center_lock: ff
+- time: '+2'
+  lights:
+    l_left_lock: 0
+    l_r_lock: 0
+    l_center_lock: 0
+- time: '+1'
+  lights:
+    l_left_lock: ff
+    l_r_lock: ff
+    l_center_lock: ff
+- time: '+2'
+  lights:
+    l_left_lock: 0
+    l_r_lock: 0
+    l_center_lock: 0
+- time: '+1'
+  lights:
+    l_left_lock: ff
+    l_r_lock: ff
+    l_center_lock: ff
+- time: '+2'
+  lights:
+    l_left_lock: 0
+    l_r_lock: 0
+    l_center_lock: 0
+- time: '+2'

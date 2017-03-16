@@ -1,0 +1,512 @@
+# config_version=4
+mode:
+  start_events: ball_starting
+  priority: 100
+  code: base.Base
+
+event_player:
+  multiplayer_game: player_1_multiplayer_slide
+  player_1_ball_started: player_1_multiplayer_slide
+  ball_starting: flippers_on reset_drop_target lower_ramp
+  ball_ending: flippers_off
+  tilt: flippers_off c_gen_illumination_relay
+  slam_tilt: flippers_off
+  mode_base_started: reset_drop_target lower_ramp
+
+slide_player:
+  single_player_ball_started: slide_1
+  player_1_multiplayer_slide: slide_2
+  player_2_ball_started: slide_3
+  player_3_ball_started: slide_4
+  player_4_ball_started: slide_5
+
+sound_player:
+
+  mode_base_started:
+    music-Infection:
+      loops: -1
+
+  balldevice_playfield_ball_enter:
+    music-Infection:
+      action: stop
+    HelloweenGorgar:
+      loops: -1
+  s_r_jet_active: Easy on the Mech_STE-018 Audio Extracted_53
+  s_l_jet_active: medium metal
+
+scoring:
+  group_rollover_lanes_default_unlit_hit:
+    score: 2500
+  group_rollover_lanes_default_lit_hit:
+    score: 100
+  group_rollover_lanes_default_lit_complete:
+    score: 1000000
+  s_r_10_point_active:
+    score: 10
+  s_l_10_point_active:
+    score: 10
+  s_l_kicker_active:
+    score: 1000
+  s_r_kicker_active:
+    score: 1000
+  s_r_target_active:
+    score: 10000
+  s_o_target_active:
+    score: 10000
+  s_a_target_active:
+    score: 10000
+  s_d_target_active:
+    score: 10000
+  s_k_target_active:
+    score: 10000
+  s_i_target_active:
+    score: 10000
+  s_n_target_active:
+    score: 10000
+  s_g_target_active:
+    score: 10000
+  s_s_target_active:
+    score: 10000
+  s_lane_1_active:
+    score: 2000
+  s_lane_2_active:
+    score: 2000
+  s_lane_3_active:
+    score: 2000
+  s_lane_4_active:
+    score: 2000
+  s_top_jet_active:
+    score: 2000
+  s_r_jet_active:
+    score: 2000
+  s_l_jet_active:
+    score: 2000
+  s_bottom_jet_active:
+    score: 2000
+  s_drop_target_active:
+    score: 5000
+  s_r_rollunder_active:
+    score: 2500
+  s_l_rollunder_active:
+    score: 2500
+  s_r_outlane_active:
+    score: 20000
+  s_upper_left_kicker_active:
+    score: 4000
+  s_l_eject_active:
+    score: 4000
+  s_c_eject_active:
+    score: 4000
+  s_r_ramp_enter_active:
+    score: 1000
+  s_r_ramp_left_active:
+    score: 1000
+  s_c_ramp_enter_active:
+    score: 1000
+  s_cent_ramp_r_exit_active:
+    score: 1000
+
+shot_groups:
+  group_rollover_lanes:
+    shots: shot_lane_1, shot_lane_2, shot_lane_3, shot_lane_4
+    rotate_left_events: s_l_flipper_eos_active
+    rotate_right_events: s_r_flipper_eos_active
+    reset_events: group_rollover_lanes_default_lit_complete
+    enable_events: ball_started
+    disable_events: ball_ending
+
+slides:
+  slide_1:
+  - type: text
+    text: (player1|score)
+    number_grouping: true
+    min_digits: 2
+    y: middle+2
+    z: 110
+      #persist_slide: yes
+    style: tall title
+  - type: text
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    style: small
+    y: bottom+1
+    z: 110
+  - type: image
+     image: Overlayv3
+    width: 1280
+    height: 720
+    allow_stretch: no
+    keep_ratio: no
+    z: 90
+  - type: image
+     image: Player1Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 65
+    y: 570
+    z: 100
+  slide_2:
+  - type: image
+     image: Overlayv3
+    width: 1280
+    height: 720
+    allow_stretch: no
+    keep_ratio: no
+    z: 90
+  - type: image
+     image: Player1Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 65
+    y: 570
+    z: 100
+  - type: image
+     image: Player2Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 795
+    y: 570
+    z: 100
+  - type: image
+     image: Player3Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 63
+    y: 40
+    z: 100
+  - type: image
+     image: Player4Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 795
+    y: 40
+    z: 100
+  - type: text
+    text: (player1|score)
+      #font: medium
+    number_grouping: true
+    min_digits: 2
+    anchor_y: top
+    anchor_x: right
+    x: right-60
+    y: top-2
+    z: 110
+  - type: text
+    text: (player2|score)
+    style: medium
+    anchor_y: top
+    anchor_x: right
+    number_grouping: true
+    min_digits: 2
+    x: right-2
+    y: top-2
+    z: 110
+  - type: text
+    text: (player3|score)
+    style: medium
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+10
+    x: right-60
+    number_grouping: true
+    min_digits: 2
+    z: 110
+  - type: text
+    text: (player4|score)
+    style: medium
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+10
+    x: right-2
+    number_grouping: true
+    min_digits: 2
+    z: 110
+  - type: text
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    style: small
+    y: bottom+1
+    z: 110
+
+  slide_3:
+  - type: image
+     image: Overlayv3
+    width: 1280
+    height: 720
+    allow_stretch: no
+    keep_ratio: no
+    z: 90
+  - type: image
+     image: Player1Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 65
+    y: 570
+    z: 100
+  - type: image
+     image: Player2Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 795
+    y: 570
+    z: 100
+  - type: image
+     image: Player3Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 63
+    y: 40
+    z: 100
+  - type: image
+     image: Player4Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 795
+    y: 40
+    z: 100
+  - type: text
+    text: (player1|score)
+    style: medium
+    number_grouping: true
+    min_digits: 2
+    anchor_y: top
+    anchor_x: right
+    x: right-60
+    y: top-2
+    z: 110
+  - type: text
+    text: (player2|score)
+#      font: medium
+    anchor_y: top
+    anchor_x: right
+    number_grouping: true
+    min_digits: 2
+    x: right-2
+    y: top-2
+    z: 110
+  - type: text
+    text: (player3|score)
+    style: medium
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+10
+    x: right-60
+    number_grouping: true
+    min_digits: 2
+    z: 110
+  - type: text
+    text: (player4|score)
+    style: medium
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+10
+    x: right-2
+    number_grouping: true
+    min_digits: 2
+    z: 110
+  - type: text
+    text: BALL (player2|ball)    (machine|credits_string)
+    anchor_y: bottom
+    style: small
+    y: bottom+1
+    z: 110
+
+  slide_4:
+  - type: image
+     image: Overlayv3
+    width: 1280
+    height: 720
+    allow_stretch: no
+    keep_ratio: no
+    z: 90
+  - type: image
+     image: Player1Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 65
+    y: 570
+    z: 100
+  - type: image
+     image: Player2Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 795
+    y: 570
+    z: 100
+  - type: image
+     image: Player3Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 63
+    y: 40
+    z: 100
+  - type: image
+     image: Player4Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 795
+    y: 40
+    z: 100
+  - type: text
+    text: (player1|score)
+    style: medium
+    number_grouping: true
+    min_digits: 2
+    anchor_y: top
+    anchor_x: right
+    x: right-60
+    y: top-2
+    z: 110
+  - type: text
+    text: (player2|score)
+    style: medium
+    anchor_y: top
+    anchor_x: right
+    number_grouping: true
+    min_digits: 2
+    x: right-2
+    y: top-2
+    z: 110
+  - type: text
+    text: (player3|score)
+#      font: medium
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+10
+    x: right-60
+    number_grouping: true
+    min_digits: 2
+    z: 110
+  - type: text
+    text: (player4|score)
+    style: medium
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+10
+    x: right-2
+    number_grouping: true
+    min_digits: 2
+    z: 110
+  - type: text
+    text: BALL (player3|ball)    (machine|credits_string)
+    anchor_y: bottom
+    style: small
+    y: bottom+1
+    z: 110
+
+  slide_5:
+  - type: image
+     image: Overlayv3
+    width: 1280
+    height: 720
+    allow_stretch: no
+    keep_ratio: no
+    z: 90
+  - type: image
+     image: Player1Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 65
+    y: 570
+    z: 100
+  - type: image
+     image: Player2Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 795
+    y: 570
+    z: 100
+  - type: image
+     image: Player3Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 63
+    y: 40
+    z: 100
+  - type: image
+     image: Player4Skull
+    width: 426
+    height: 170
+    allow_stretch: no
+    keep_ratio: no
+    x: 795
+    y: 40
+    z: 100
+  - type: text
+    text: (player1|score)
+    style: medium
+    number_grouping: true
+    min_digits: 2
+    anchor_y: top
+    anchor_x: right
+    x: right-60
+    y: top-2
+    z: 110
+  - type: text
+    text: (player2|score)
+    style: medium
+    anchor_y: top
+    anchor_x: right
+    number_grouping: true
+    min_digits: 2
+    x: right-2
+    y: top-2
+    z: 110
+  - type: text
+    text: (player3|score)
+    style: medium
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+10
+    x: right-60
+    number_grouping: true
+    min_digits: 2
+    z: 110
+  - type: text
+    text: (player4|score)
+#      font: medium
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+10
+    x: right-2
+    number_grouping: true
+    min_digits: 2
+    z: 110
+  - type: text
+    text: BALL (player4|ball)    (machine|credits_string)
+    anchor_y: bottom
+    style: small
+    y: bottom+1
+    z: 110

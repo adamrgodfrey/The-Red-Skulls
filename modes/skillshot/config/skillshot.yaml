@@ -1,0 +1,33 @@
+#config_version=4
+mode:
+  start_events: ball_starting
+  stop_events: timer_skill_shot_complete, s_c_eject_active
+  priority: 300
+
+scoring:
+  s_c_eject_active:
+    score: 100000|block
+
+timers:
+  skill_shot:
+    start_value: 12
+    direction: down
+    control_events:
+    - event: balldevice_playfield_ball_enter
+      action: start 
+
+slide_player:
+  timer_skill_shot_tick: slide_9
+slides:
+  slide_9:
+  - type: text
+    text: 'Shoot the Scoop: (ticks)'
+show_player:
+  mode_skill_shot_started:
+    flash_c_time_lock:
+      loops: -1
+      speed: 15
+  mode_skill_shot_stopped:
+    flash_c_time_lock:
+      action: stop
+

@@ -1,0 +1,74 @@
+# show_version=4
+- time: 0
+  lights:
+    l_r_time_lock: ff
+- time: '+4'
+  lights:
+    l_r_time_lock: 0
+- time: '+4'
+  lights:
+    l_r_lock: ff
+- time: '+4'
+  lights:
+    l_r_lock: 0
+- time: '+4'
+  lights:
+    l_r_extra_ball: ff
+- time: '+4'
+  lights:
+    l_r_extra_ball: 0
+- time: '+4'
+  lights:
+    l_mega_score: ff
+- time: '+4'
+  lights:
+    l_mega_score: 0
+- time: '+1'
+  lights:
+    l_r_time_lock: ff
+    l_r_lock: ff
+    l_r_extra_ball: ff
+    l_mega_score: ff
+- time: '+1'
+  lights:
+    l_r_time_lock: 0
+    l_r_lock: 0
+    l_r_extra_ball: 0
+    l_mega_score: 0
+- time: '+1'
+  lights:
+    l_r_time_lock: ff
+    l_r_lock: ff
+    l_r_extra_ball: ff
+    l_mega_score: ff
+- time: '+1'
+  lights:
+    l_r_time_lock: 0
+    l_r_lock: 0
+    l_r_extra_ball: 0
+    l_mega_score: 0
+- time: '+1'
+  lights:
+    l_r_time_lock: ff
+    l_r_lock: ff
+    l_r_extra_ball: ff
+    l_mega_score: ff
+- time: '+1'
+  lights:
+    l_r_time_lock: 0
+    l_r_lock: 0
+    l_r_extra_ball: 0
+    l_mega_score: 0
+- time: '+1'
+  lights:
+    l_r_time_lock: ff
+    l_r_lock: ff
+    l_r_extra_ball: ff
+    l_mega_score: ff
+- time: '+1'
+  lights:
+    l_r_time_lock: 0
+    l_r_lock: 0
+    l_r_extra_ball: 0
+    l_mega_score: 0
+- time: '+1'

@@ -1,0 +1,74 @@
+# show_version=4
+- time: 0
+  lights:
+    l_center_extra_ball: ff
+- time: '+1'
+  lights:
+    l_center_extra_ball: 0
+- time: '+4'
+  lights:
+    l_detour_when_lit: ff
+- time: '+1'
+  lights:
+    l_detour_when_lit: 0
+- time: '+4'
+  lights:
+    l_spots_letter: ff
+- time: '+1'
+  lights:
+    l_spots_letter: 0
+- time: '+4'
+  lights:
+    l_c_time_lock: ff
+- time: '+1'
+  lights:
+    l_c_time_lock: 0
+- time: '+4'
+  lights:
+    l_center_lock: ff
+- time: '+1'
+  lights:
+    l_center_lock: 0
+- time: '+4'
+  lights:
+    l_center_extra_ball: ff
+    l_detour_when_lit: ff
+    l_spots_letter: ff
+    l_c_time_lock: ff
+    l_center_lock: ff
+- time: '+1'
+  lights:
+    l_center_extra_ball: 0
+    l_detour_when_lit: 0
+    l_spots_letter: 0
+    l_c_time_lock: 0
+    l_center_lock: 0
+- time: '+4'
+  lights:
+    l_center_extra_ball: ff
+    l_detour_when_lit: ff
+    l_spots_letter: ff
+    l_c_time_lock: ff
+    l_center_lock: ff
+- time: '+1'
+  lights:
+    l_center_extra_ball: 0
+    l_detour_when_lit: 0
+    l_spots_letter: 0
+    l_c_time_lock: 0
+    l_center_lock: 0
+- time: '+4'
+  lights:
+    l_center_extra_ball: ff
+    l_detour_when_lit: ff
+    l_spots_letter: ff
+    l_c_time_lock: ff
+    l_center_lock: ff
+- time: '+1'
+  lights:
+    l_center_extra_ball: 0
+    l_detour_when_lit: 0
+    l_spots_letter: 0
+    l_c_time_lock: 0
+    l_center_lock: 0
+- time: '+1'

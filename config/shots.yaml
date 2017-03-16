@@ -1,0 +1,74 @@
+#config_version=4
+shots:
+  shot_r_target:
+    switch: s_r_target
+    show_tokens:
+      light: l_r_target
+  shot_o_target:
+    switch: s_o_target
+    show_tokens:
+      light: l_o_target
+  shot_a_target:
+    switch: s_a_target
+    show_tokens:
+      light: l_a_target
+  shot_d_target:
+    switch: s_d_target
+    show_tokens:
+      light: l_d_target
+  shot_k_target:
+    switch: s_k_target
+    show_tokens:
+      light: l_k_target
+  shot_i_target:
+    switch: s_i_target
+    show_tokens:
+      light: l_i_target
+  shot_n_target:
+    switch: s_n_target
+    show_tokens:
+      light: l_n_target
+  shot_g_target:
+    switch: s_g_target
+    show_tokens:
+      light: l_g_target
+  shot_s_target:
+    switch: s_s_target
+    show_tokens:
+      light: l_s_target
+  shot_lane_1:
+    switch: s_lane_1
+    show_tokens:
+      light: l_lane_1
+  shot_lane_2:
+    switch: s_lane_2
+    show_tokens:
+      light: l_lane_2
+  shot_lane_3:
+    switch: s_lane_1
+    show_tokens:
+      light: l_lane_1
+  shot_lane_4:
+    switch: s_lane_4
+    show_tokens:
+      light: l_lane_4
+  shot_right_orbit_made:
+    switch_sequence: s_r_rollunder, s_l_rollunder
+    time: 2s
+  shot_right_ramp_made:
+    switch_sequence: s_r_ramp_enter, s_r_ramp_left
+    time: 2s
+    tags: ramp
+  shot_left_loop_made:
+    switch: s_l_rollunder
+  shot_center_ramp_made:
+    switch_sequence: s_c_ramp_enter, s_cent_ramp_r_exit
+
+shot_groups:
+  group_rollover_lanes:
+    shots: shot_lane_1, shot_lane_2, shot_lane_3, shot_lane_4
+    rotate_left_events: s_l_flipper_eos_active
+    rotate_right_events: s_r_flipper_eos_active
+    reset_events: group_rollover_lanes_default_lit_complete
+    enable_events: ball_started
+    disable_events: ball_ending

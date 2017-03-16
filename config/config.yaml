@@ -1,0 +1,84 @@
+# config_version=4
+
+
+hardware:
+  platform: p_roc
+  driverboards: snux
+
+
+window:
+  width: 1280
+  height: 720
+  title: Mission Pinball Framework - Red Skulls
+  resizable: true
+  fullscreen: ture
+  borderless: false
+  exit_on_escape: true
+
+displays:
+  window:
+    height: 720
+    width: 1280
+
+config:
+- hardware.yaml
+- shots.yaml
+- keyboard.yaml
+- sound.yaml
+- soundeffects.yaml
+- proc.yaml
+
+mpf:
+  default_pulse_ms: 20
+
+game:
+  balls_per_game: 3
+  max_players: 4
+
+modes:
+- attract
+- base
+#- bonus
+#- combos
+#- credits
+- high_score
+- last_humanity
+- red_skulls
+- skillshot
+- the_end
+- tilt
+- service
+
+
+
+widget_styles:
+  text_default:
+    font_name: Quadrit
+    font_size: 10
+    adjust_top: 2
+    adjust_bottom: 3
+  space title huge:
+    font_name: DEADJIM
+    font_size: 29
+    antialias: true
+    adjust_top: 3
+    adjust_bottom: 3
+  space title:
+    font_name: DEADJIM
+    font_size: 21
+    antialias: true
+    adjust_top: 2
+    adjust_bottom: 3
+  medium:
+    font_name: depressionist-3-revisited.regular
+    font_size: 7
+    adjust_top: 1
+    adjust_bottom: 1
+  small:
+    font_name: depressionist-3-revisited.regular
+    font_size: 9
+    adjust_top: 2
+    adjust_bottom: 3
+  tall title:
+    font_name: depressionist-3-revisited.regular
+    font_size: 20

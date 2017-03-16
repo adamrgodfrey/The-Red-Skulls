@@ -1,0 +1,51 @@
+#config_version=4
+keyboard:
+  z:
+    switch: s_l_flipper_eos
+  /:
+    switch: s_r_flipper_eos
+  1:
+    switch: s_r_trough
+    toggle: true
+  2:
+    switch: s_l_trough
+    toggle: true
+  p:
+    switch: s_ball_shooter
+    toggle: true
+  c:
+    switch: s_credit_button
+  q:
+    switch: s_lane_1
+  w:
+    switch: s_lane_2
+  e:
+    switch: s_lane_3
+  t:
+    switch: s_lane_4
+  r:
+    switch: s_r_target
+  o:
+    switch: s_o_target
+  a:
+    switch: s_a_target
+  d:
+    switch: s_d_target
+  k:
+    switch: s_k_target
+  i:
+    switch: s_i_target
+  n:
+    switch: s_n_target
+  g:
+    switch: s_g_target
+  s:
+    switch: s_s_target
+  0:
+    switch: s_outhole
+  x:
+    switch: s_c_eject
+  l:
+    switch: s_l_kicker
+  j:
+    switch: s_l_jet  

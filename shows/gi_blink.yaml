@@ -1,0 +1,13 @@
+# show_version=4
+- time: 0
+  coils:
+    c_gen_illumination_relay: pulse
+  flashers: f_rear_playfield_flashers
+- time: '+1'
+  coils:
+    c_gen_illumination_relay: pulse
+  flashers: f_l_lightning_bolt
+- time: '+1'
+  coils:
+    c_gen_illumination_relay: pulse
+  flashers: f_r_lightning_bolt

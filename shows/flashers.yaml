@@ -1,0 +1,11 @@
+# show_version=4
+- time: 0
+  flashers: f_rear_playfield_flashers
+- time: '+1'
+  flashers: f_l_lightning_bolt
+- time: '+1'
+  flashers: f_r_lightning_bolt
+- time: '+1'
+  flashers: f_mid_insert_board
+- time: '+1'
+  flashers: f_bikes_flasher

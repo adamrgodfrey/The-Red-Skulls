@@ -1,0 +1,38 @@
+# show_version=4
+- time: 0
+  lights:
+    l_l_special: ff
+- time: '+1'
+  lights:
+    l_l_special: 0
+- time: '+4'
+  lights:
+    l_r_special: ff
+- time: '+1'
+  lights:
+    l_r_special: 0
+- time: '+4'
+  lights:
+    l_cruise_again: ff
+- time: '+1'
+  lights:
+    l_cruise_again: 0
+- time: '+4'
+  lights:
+    l_l_special: ff
+- time: '+1'
+  lights:
+    l_l_special: 0
+- time: '+4'
+  lights:
+    l_r_special: ff
+- time: '+1'
+  lights:
+    l_r_special: 0
+- time: '+4'
+  lights:
+    l_cruise_again: ff
+- time: '+1'
+  lights:
+    l_cruise_again: 0
+- time: '+1'

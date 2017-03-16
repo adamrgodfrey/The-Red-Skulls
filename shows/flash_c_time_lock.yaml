@@ -1,0 +1,7 @@
+# show_version=4
+  lights:
+    l_c_time_lock: ff
+- time: '+1'
+  lights:
+    l_c_time_lock: 0
+- time: '+1'
