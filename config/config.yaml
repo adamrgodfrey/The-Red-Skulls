@@ -5,21 +5,6 @@ hardware:
   platform: p_roc
   driverboards: snux
 
-
-window:
-  width: 1280
-  height: 720
-  title: Mission Pinball Framework - Red Skulls
-  resizable: true
-  fullscreen: true
-  borderless: false
-  exit_on_escape: true
-
-displays:
-  window:
-    height: 720
-    width: 1280
-
 config:
 - hardware.yaml
 - shots.yaml
